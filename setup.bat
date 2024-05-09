@@ -1,9 +1,3 @@
-doskey clear=cls
-doskey ls=dir
-doskey nvim=nvim -u init.lua
-doskey neovim=nvim
-doskey vim=nvim
-
 REM C:\Windows\System32\cmd.exe /min /C "set __COMPAT_LAYER=RUNASINVOKER && start "" "C:\Windows\regedit.exe""
 
 cd %HOMEDRIVE%%HOMEPATH%
