@@ -24,5 +24,8 @@ mkdir nvim
 cd nvim
 git clone https://github.com/Bonono63/nvim-config.git
 
+cd %HOMEDRIVE%%HOMEPATH%\portable\
+git clone https://github.com/Bonono63/alacritty-config.git alacritty
+
 cd %HOMEDRIVE%%HOMEPATH%
 exit
