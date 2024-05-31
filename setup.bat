@@ -23,6 +23,8 @@ cd %APPDATA%\..\Local\
 mkdir nvim
 cd nvim
 git clone https://github.com/Bonono63/nvim-config.git
+cd nvim-config
+mv init.lua ../
 
 cd %HOMEDRIVE%%HOMEPATH%\portable\
 git clone https://github.com/Bonono63/alacritty-config.git alacritty
