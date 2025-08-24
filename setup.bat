@@ -20,7 +20,8 @@ echo Retrieving Alacritty
 IF NOT EXIST alacritty.exe powershell.exe -command "Invoke-WebRequest https://github.com/alacritty/alacritty/releases/download/v0.13.2/Alacritty-v0.13.2-portable.exe -OutFile alacritty.exe"
 # echo Retrieving CMake
 # IF NOT EXIST cmake.exe powershell.exe -command "Invoke-WebRequest https://github.com/Kitware/CMake/releases/download/v3.31.2/cmake-3.31.2-windows-x86_64.zip -OutFile cmake.zip"
-
+echo Retrieving Zig
+IF NOT EXIST zig.exe powershell.exe -command "Invoke-WebRequest https://ziglang.org/download/0.14.1/zig-x86_64-windows-0.14.1.zip -OutFile zig.zip"
 
 echo Extracting archives
 IF NOT EXIST neovim\NUL powershell.exe -command "Expand-Archive neovim.zip"
@@ -40,4 +41,5 @@ git clone https://github.com/Bonono63/alacritty-config.git alacritty
 
 cd %HOMEDRIVE%%HOMEPATH%
 exit
+
 
