@@ -18,14 +18,14 @@ echo Retrieving Git
 IF NOT EXIST git.zip powershell.exe -command "Invoke-WebRequest https://github.com/git-for-windows/git/releases/download/v2.45.0.windows.1/MinGit-2.45.0-64-bit.zip -OutFile git.zip"
 echo Retrieving Alacritty
 IF NOT EXIST alacritty.exe powershell.exe -command "Invoke-WebRequest https://github.com/alacritty/alacritty/releases/download/v0.13.2/Alacritty-v0.13.2-portable.exe -OutFile alacritty.exe"
-echo Retrieving CMake
-IF NOT EXIST cmake.exe powershell.exe -command "Invoke-WebRequest https://github.com/Kitware/CMake/releases/download/v3.31.2/cmake-3.31.2-windows-x86_64.zip -OutFile cmake.zip"
+# echo Retrieving CMake
+# IF NOT EXIST cmake.exe powershell.exe -command "Invoke-WebRequest https://github.com/Kitware/CMake/releases/download/v3.31.2/cmake-3.31.2-windows-x86_64.zip -OutFile cmake.zip"
 
 
 echo Extracting archives
 IF NOT EXIST neovim\NUL powershell.exe -command "Expand-Archive neovim.zip"
 IF NOT EXIST git\NUL powershell.exe -command "Expand-Archive git.zip"
-IF NOT EXIST cmake\NUL powershell.exe -command "Expand-Archive cmake.zip"
+# IF NOT EXIST cmake\NUL powershell.exe -command "Expand-Archive cmake.zip"
 IF NOT EXIST mingw64\NUL "C:\Program Files\7-Zip\7z.exe" x -y mingw64.7z
 
 cd %APPDATA%\..\Local\
@@ -40,3 +40,4 @@ git clone https://github.com/Bonono63/alacritty-config.git alacritty
 
 cd %HOMEDRIVE%%HOMEPATH%
 exit
+
