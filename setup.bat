@@ -28,6 +28,7 @@ IF NOT EXIST neovim\NUL powershell.exe -command "Expand-Archive neovim.zip"
 IF NOT EXIST git\NUL powershell.exe -command "Expand-Archive git.zip"
 # IF NOT EXIST cmake\NUL powershell.exe -command "Expand-Archive cmake.zip"
 IF NOT EXIST mingw64\NUL "C:\Program Files\7-Zip\7z.exe" x -y mingw64.7z
+IF NOT EXIST zig\NUL powershell.exe -command "Expand-Archive zig.zip"
 
 cd %APPDATA%\..\Local\
 mkdir nvim
@@ -41,5 +42,6 @@ git clone https://github.com/Bonono63/alacritty-config.git alacritty
 
 cd %HOMEDRIVE%%HOMEPATH%
 exit
+
 
 
